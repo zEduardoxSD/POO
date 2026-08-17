@@ -23,12 +23,11 @@ public class App {
                 }
                 System.out.println("*".repeat((i + 1)));
             }
-            for (int i = base; i >= 0; i -=2) {
-                if (espaco < 0) {
-                    System.out.print(" ".repeat(espaco));
+            espaco = 0;
+            for (int i = base - 2 ; i >= 1; i -=2) {
                     espaco++;
-                }
-                System.out.println("*".repeat((i + 1)));
+                    System.out.print(" ".repeat(espaco));
+                System.out.println("*".repeat((i)));
             }
         }
     }
