@@ -4,6 +4,7 @@
 package poo.ads;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class App {
 
@@ -38,18 +39,31 @@ public class App {
 
         agenda.forEach(IO::println);
 
+        //hashmap
+        HashMap<String, String> mapa = new HashMap<>();
 
+        mapa.put("123", "Juca");
+        mapa.put("456", "Ana");
+        mapa.put("789", "Pedro");
+        mapa.put("153", "Juca");
+        mapa.put("163", "Juca");
 
+        String nome = mapa.get("789");
 
+        //Duas maneiras de percorer o mapa--------------------------------------------------//
+        mapa.forEach((chave, valor)-> IO.println(chave +"  " + valor));
 
+        for (var elemento : mapa.entrySet()){
+            System.out.println("chave: " + elemento.getKey());
+            System.out.println("valor: " + elemento.getValue());
+        }
+        //----------------------------------------------------------------------------------//
 
+        //remove pelo id/chave:
+        mapa.remove("123");
 
-
-
-
-
-
-
+        //remove pelos valores, não há necessidade de declarar o tipo da variavel("e")
+        mapa.values().removeIf(e->e.equals("Juca"));
 
     }
 }
