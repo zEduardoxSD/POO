@@ -29,6 +29,18 @@ public class Livro {
         return dataPublicacao;
     }
 
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public void setDataPublicacao(String dataPublicacao) {
+        this.dataPublicacao = dataPublicacao;
+    }
+
     @Override
     public String toString() {
         return "Livro{" +
