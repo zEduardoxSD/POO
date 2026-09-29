@@ -5,11 +5,14 @@ public class Motor {
     private int giroAtual;
     private int cilindro;
 
-
-    public Motor() {
+    public Motor(int hp, int cilindro) {
+        this.hp = hp;
+        this.cilindro = cilindro;
+        this.giroAtual = 0;
     }
+
     public void acelerar(int valor){
-        this.giroAtual ++;
+        this.giroAtual += valor;
     }
 
 }
