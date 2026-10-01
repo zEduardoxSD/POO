@@ -8,10 +8,9 @@ public class App {
 
     public static void main(String[] args) {
 
-        Motor v8 = new Motor(1, 2);
+        /*Motor v8 = new Motor(1, 2);
         Carro fusca = new Carro("VW", v8);
-
-        Aluno glade = new Aluno("Eduardo", "eduardo@gmail.com", new Endereco("Rua batraco xurulipa","Biguacu", "Bom viver", "150", "sc", "Brasil", "88160-658"));
+        Aluno glade = new Aluno("Eduardo", "eduardo@gmail.com", new Endereco("Rua batraco xurulipa","Biguacu", "Bom viver", "150", "sc", "Brasil", "88160-658"));*/
 
 
 

@@ -91,7 +91,7 @@ classDiagram
             -motores ArrayList~Motor~
             -int tripulantes
             -int passageiros
-            -int capacidadeTanque
+            -double capacidadeTanque
             -boolean statusAtual
             +Aviao(m: Motor, t: int, p: int, c int, s: boolean)
             +liga() void
