@@ -6,14 +6,16 @@ package ads.poo;
 public class App {
 
     public static void main(String[] args) {
-        Aldeao a = new Aldeao(25,1,0.8);
-        Arqueiro b = new Arqueiro(35,2,1);
-        Cavaleiro c = new Cavaleiro(50,3,2);
-        IO.println(a.atacar());
-        IO.println(a.mover());
-        IO.println(b.atacar());
-        IO.println(b.mover());
-        IO.println(c.atacar());
-        IO.println(c.mover());
+        Aldeao a = new Aldeao();
+        Arqueiro b = new Arqueiro();
+        Cavaleiro t = new Cavaleiro();
+        Linha l = new Linha(1,2,"Azul", 3, 4);
+        Circulo c = new Circulo(1, 2,"Rosa", 5);
+        Retangulo r = new Retangulo(4,4, "Marrom", 6,6);
+        IO.println(l.desenhar());
+        IO.println(c.calcularArea());
+        IO.println(c.calcularPerimetro());
+        IO.println(r.calcularArea());
+        IO.println(r.calcularPerimetro());
     }
 }

@@ -1,8 +1,9 @@
 package ads.poo;
 
 public class Arqueiro extends Personagem{
-    public Arqueiro(int vida, int ataque, double velocidade) {
-        super(vida, ataque, velocidade);
+
+    public Arqueiro() {
+        super(35, 2, 1);
     }
 
     @Override

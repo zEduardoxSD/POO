@@ -3,8 +3,8 @@ package ads.poo;
 public class Aldeao extends Personagem {
 
 
-    public Aldeao(int vida, int ataque, double velocidade) {
-        super(vida, ataque, velocidade);
+    public Aldeao() {
+        super(25, 1, 0.8);
     }
 
 
