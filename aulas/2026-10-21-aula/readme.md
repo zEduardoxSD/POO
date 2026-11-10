@@ -4,8 +4,8 @@
             -vida: int
             -ataque: int
             -velocidade: double
-            + atacar(a int) String
-            + mover(v double) String
+            + atacar(a int) String*
+            + mover(v double) String*
         }
         class Aldeao{
             

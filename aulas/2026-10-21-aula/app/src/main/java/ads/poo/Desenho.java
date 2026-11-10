@@ -1,6 +1,6 @@
 package ads.poo;
 
-public class Desenho {
+public abstract class Desenho {
     protected int xIni;
     protected int yIni;
     protected String cor;
@@ -11,10 +11,8 @@ public class Desenho {
         this.cor = cor;
     }
 
-    public String desenhar(){
+    public abstract String desenhar();
 
-        return "a";
-    }
     @Override
     public String toString() {
         return "Desenho{" +
