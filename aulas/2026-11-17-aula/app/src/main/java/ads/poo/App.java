@@ -3,17 +3,30 @@
  */
 package ads.poo;
 
+import edu.princeton.cs.algs4.Draw;
+
 import java.util.ArrayList;
 
 public class App {
 
     public static void main(String[] args) {
 
-        Disciplina poo = new Disciplina("POO", new DiaDaSemana[]{DiaDaSemana.TERCA, DiaDaSemana.QUARTA});
-        ArrayList<Disciplina> d1 = new ArrayList<>();
-        d1.add(1, new Disciplina("a", new DiaDaSemana[]{DiaDaSemana.TERCA, DiaDaSemana.QUARTA}));
+        ArrayList<Cartas> baralho = new ArrayList<>();
 
-        IO.println(poo);
+        for (Naipes n: Naipes.values()){
+            for (Valores v : Valores.values()){
+                baralho.add(new Cartas(v, n));
+            }
+        }
+        IO.println(baralho);
+
+        IO.println(baralho.getFirst().nomeDaImagem());
+
+        Draw draw = new Draw();
+
+        //draw.text(.5,.5,"poo");
+        draw.picture(.5,.5,"cartas/kp.png");
+
 
 
 
