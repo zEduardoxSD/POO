@@ -1,6 +1,6 @@
 package ads.poo;
 
-public class Cartas extends Desenhar {
+public class Cartas {
     protected Valores valor;
     protected Naipes naipe;
 
@@ -9,10 +9,7 @@ public class Cartas extends Desenhar {
         this.naipe = naipe;
     }
 
-    public String nomeDaImagem(){
-       return this.valor.simbolo+this.naipe+".png";
 
-    }
 
 
 

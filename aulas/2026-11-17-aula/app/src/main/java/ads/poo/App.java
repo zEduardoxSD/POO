@@ -20,12 +20,19 @@ public class App {
         }
         IO.println(baralho);
 
-        IO.println(baralho.getFirst().nomeDaImagem());
+
 
         Draw draw = new Draw();
+        draw.setCanvasSize(800,800);
+        draw.setXscale(0,800);
+        draw.setYscale(0,800);
+
+        Desenhar d = new Desenhar(Valores.CAVALO,Naipes.ESPADA, 400,400);
+        d.desenhar(draw);
+
 
         //draw.text(.5,.5,"poo");
-        draw.picture(.5,.5,"cartas/kp.png");
+        //draw.picture(.5,.5,"cartas/kp.png");
 
 
 
